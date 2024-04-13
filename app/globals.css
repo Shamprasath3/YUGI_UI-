@@ -1,0 +1,76 @@
+@tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  @layer base {
+    :root {
+      --background: #E4F4E4; /* Pastel green for a neutral background */
+      --foreground: #333333; /* Dark gray for text and elements */
+      
+      --card: #F8F8F0; /* Off-white for card background with a hint of green */
+      --card-foreground: #333333; /* Dark gray text on card background */
+      
+      --popover: #FFFFFF; /* White for popover background */
+      --popover-foreground: #333333; /* Dark gray text on popover background */
+      
+      --primary: #8BA687; /* Soft green for primary color */
+      --primary-foreground: #FFFFFF; /* White text on primary color */
+      
+      --secondary: #502f11; /* Brown tone for secondary color */
+      --secondary-foreground: #333333; /* Dark gray text on secondary color */
+      
+      --muted: #E7E7D8; /* Pale yellow for muted color with a touch of green */
+      --muted-foreground: #666666; /* Medium gray text on muted color */
+      
+      --accent: #7EA2A8; /* Dusty blue for accent color */
+      --accent-foreground: #FFFFFF; /* White text on accent color */
+      
+      --destructive: #FF6B6B; /* Destructive red for alert messages */
+      --destructive-foreground: #FFFFFF; /* White text on destructive color */
+      
+      --border: #D9D9D9; /* Light border color */
+      --input: #FFFFFF; /* White background for input fields */
+      --ring: #333333; /* Dark ring color */
+      
+      --radius: 0.5rem; /* Rounded border radius */
+  }
+
+    .dark {
+      --background: 0 0% 3.9%;
+      --foreground: 0 0% 98%;
+
+      --card: 0 0% 3.9%;
+      --card-foreground: 0 0% 98%;
+
+      --popover: 0 0% 3.9%;
+      --popover-foreground: 0 0% 98%;
+
+      --primary: 0 0% 98%;
+      --primary-foreground: 0 0% 9%;
+
+      --secondary: 0 0% 14.9%;
+      --secondary-foreground: 0 0% 98%;
+
+      --muted: 0 0% 14.9%;
+      --muted-foreground: 0 0% 63.9%;
+
+      --accent: 0 0% 14.9%;
+      --accent-foreground: 0 0% 98%;
+
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 0 0% 98%;
+
+      --border: 0 0% 14.9%;
+      --input: 0 0% 14.9%;
+      --ring: 0 0% 83.1%;
+    }
+  }
+
+  @layer base {
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply bg-background text-foreground;
+    }
+  }
